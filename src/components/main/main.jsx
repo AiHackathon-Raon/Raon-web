@@ -1,9 +1,18 @@
 import React from "react";
+import * as M from './main.style';
+import logo from "../../asset/img/logo.svg";
 
 function Main() {
   return (
     <>
-      <div>main</div>
+      <M.mainLayout>
+        <M.header>
+          <M.logo src={logo}></M.logo>
+          <M.search>
+            
+          </M.search>
+        </M.header>
+      </M.mainLayout>
     </>
   );
 }
