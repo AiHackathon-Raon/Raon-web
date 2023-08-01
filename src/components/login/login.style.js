@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
-export const Bag = styled.div`
-  background-image: url("../../asset/img/back.jpg");
-  width: 100vw;
-  height: 100vw;
+export const Img = styled.img`
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  z-index: 11;
 `;
