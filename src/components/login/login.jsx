@@ -15,6 +15,8 @@ function Login() {
       <L.Raund_></L.Raund_>
       <L.Login_></L.Login_>
       <L.Logint>로그인</L.Logint>
+      <L.No>계정이 없으신가요?</L.No>
+      <L.SignUp>회원가입</L.SignUp>
     </>
   );
 }
