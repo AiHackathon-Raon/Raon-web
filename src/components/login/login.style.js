@@ -20,14 +20,79 @@ export const Back = styled.div`
   transform: translate(90%, 17%);
 `;
 
-export const Logo = styled.div`
+export const Logo = styled.img`
   z-index: 2;
-  color: #223dae;
-  text-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  font-family: "Rubik Glitch", sans-serif;
-  font-size: 90px;
+  transform: translate(294%, -660%);
+`;
+
+export const Id = styled.div`
+  z-index: 3;
+  color: #1e3abb;
+  text-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Pretendard", sans-serif;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
-  transform: translate(44%, -510%);
+  transform: translate(37%, -1970%);
+`;
+
+export const Raund = styled.div`
+  width: 420px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 3px 10px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 10px 30px 0px rgba(0, 0, 0, 0.2),
+    0px -3px 10px 0px rgba(255, 255, 255, 0.1) inset;
+  transform: translate(150%, -710%);
+`;
+
+export const Pw = styled.div`
+  z-index: 3;
+  color: #1e3abb;
+  text-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Pretendard", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transform: translate(37%, -1720%);
+`;
+
+export const Raund_ = styled.div`
+  width: 420px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 3px 10px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 10px 30px 0px rgba(0, 0, 0, 0.2),
+    0px -3px 10px 0px rgba(255, 255, 255, 0.1) inset;
+  transform: translate(150%, -611%);
+`;
+
+export const Login_ = styled.div`
+  z-index: 4;
+  width: 420px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: linear-gradient(143deg, #0f2690 0%, rgba(31, 67, 233, 0.64) 100%);
+  box-shadow: 2px 3px 10px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(150%, -420%);
+`;
+
+export const Logint = styled.div`
+  z-index: 5;
+  color: #000;
+  text-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Pretendard", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transform: translate(46.7%, -1190%);
 `;
