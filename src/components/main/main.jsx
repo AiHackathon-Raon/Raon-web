@@ -15,10 +15,12 @@ function Main() {
         <M.title>최신순</M.title>
         <M.writes>
           <M.WriteAreas>
+            <M.backButton src={back}></M.backButton>
             <WriteArea></WriteArea>
             <WriteArea></WriteArea>
             <WriteArea></WriteArea>
             <WriteArea></WriteArea>
+            <M.nextButton src={next}></M.nextButton>
           </M.WriteAreas>
         </M.writes>
       </M.mainLayout>

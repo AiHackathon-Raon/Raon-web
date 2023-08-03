@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const header = styled.div`
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #E5E5E5;
     align-items: center;
     justify-content: space-between;
 `

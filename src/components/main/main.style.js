@@ -55,14 +55,31 @@ export const writer = styled.div`
 export const detail = styled.div`
   margin-left: 1vw;
   display: flex;
-`
+`;
+
 export const like = styled.div`
   margin-right: 1vw;
-`
+`;
 
 export const WriteAreas = styled.div`
   display: flex;
   width: 80vw;
-
+  position: relative;
   justify-content: space-between;
-`
+`;
+
+export const backButton = styled.img`
+  border-radius: 70%;
+  position: absolute;
+  top: 4vw;
+  left: -2vw;
+  cursor: pointer;
+`;
+
+export const nextButton = styled.img`
+  border-radius: 70%;
+  position: absolute;
+  top: 4vw;
+  right: -2vw;
+  cursor: pointer;
+`;
