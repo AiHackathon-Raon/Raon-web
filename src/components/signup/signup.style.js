@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const All = styled.div`
+  overflow-x: hidden;
+  overflow-y: hidden;
+`;
+
 export const Img = styled.img`
   z-index: -1;
   width: 100vw;
@@ -17,12 +22,12 @@ export const Back = styled.div`
   border-radius: 50px;
   backdrop-filter: blur(5px);
   background: rgba(34, 61, 174, 0.17);
-  transform: translate(29%, 17%);
+  transform: translate(330px, 139px);
 `;
 
 export const Logo = styled.img`
   z-index: 2;
-  transform: translate(300%, -660%);
+  transform: translate(740px, -470px);
 `;
 export const Id = styled.div`
   z-index: 3;
@@ -33,10 +38,14 @@ export const Id = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  transform: translate(28%, -1970%);
+  transform: translate(490px, -430px);
 `;
 
-export const Raund_Id = styled.div`
+export const Raund_Id = styled.input`
+  outline: none;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  font-size: 20px;
   width: 350px;
   height: 60px;
   flex-shrink: 0;
@@ -45,7 +54,8 @@ export const Raund_Id = styled.div`
   box-shadow: 2px 3px 10px 0px rgba(255, 255, 255, 0.1) inset,
     0px 10px 30px 0px rgba(0, 0, 0, 0.2),
     0px -3px 10px 0px rgba(255, 255, 255, 0.1) inset;
-  transform: translate(134%, -710%);
+  transform: translate(480px, -417px);
+  border: none;
 `;
 
 export const Search = styled.div`
@@ -57,10 +67,14 @@ export const Search = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  transform: translate(28%, -1650%);
+  transform: translate(490px, -340px);
 `;
 
-export const Raund_Search = styled.div`
+export const Raund_Search = styled.input`
+  outline: none;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  font-size: 20px;
   width: 350px;
   height: 60px;
   flex-shrink: 0;
@@ -69,7 +83,8 @@ export const Raund_Search = styled.div`
   box-shadow: 2px 3px 10px 0px rgba(255, 255, 255, 0.1) inset,
     0px 10px 30px 0px rgba(0, 0, 0, 0.2),
     0px -3px 10px 0px rgba(255, 255, 255, 0.1) inset;
-  transform: translate(134%, -591%);
+  transform: translate(480px, -323px);
+  border: none;
 `;
 
 export const Pw = styled.div`
@@ -81,10 +96,14 @@ export const Pw = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  transform: translate(55%, -2707%);
+  transform: translate(960px, -599px);
 `;
 
-export const Raund_Pw = styled.div`
+export const Raund_Pw = styled.input`
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  outline: none;
+  font-size: 20px;
   width: 350px;
   height: 60px;
   flex-shrink: 0;
@@ -93,7 +112,8 @@ export const Raund_Pw = styled.div`
   box-shadow: 2px 3px 10px 0px rgba(255, 255, 255, 0.1) inset,
     0px 10px 30px 0px rgba(0, 0, 0, 0.2),
     0px -3px 10px 0px rgba(255, 255, 255, 0.1) inset;
-  transform: translate(267%, -985%);
+  transform: translate(948px, -586px);
+  border: none;
 `;
 
 export const Pw_Check = styled.div`
@@ -104,10 +124,14 @@ export const Pw_Check = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  transform: translate(55%, -2383%);
+  transform: translate(960px, -510px);
 `;
 
-export const Raund_Pw_Check = styled.div`
+export const Raund_Pw_Check = styled.input`
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  outline: none;
+  font-size: 20px;
   width: 350px;
   height: 60px;
   flex-shrink: 0;
@@ -116,23 +140,22 @@ export const Raund_Pw_Check = styled.div`
   box-shadow: 2px 3px 10px 0px rgba(255, 255, 255, 0.1) inset,
     0px 10px 30px 0px rgba(0, 0, 0, 0.2),
     0px -3px 10px 0px rgba(255, 255, 255, 0.1) inset;
-  transform: translate(267%, -865%);
+  transform: translate(948px, -493px);
+  border: none;
 `;
 
-export const Signup_ = styled.div`
+export const Signup_ = styled.button`
   z-index: 4;
-  width: 420px;
+  width: 455px;
   height: 60px;
   flex-shrink: 0;
+  border: none;
   border-radius: 50px;
   background: linear-gradient(143deg, #0f2690 0%, rgba(31, 67, 233, 0.64) 100%);
   box-shadow: 2px 3px 10px 0px rgba(255, 255, 255, 0.1) inset,
     0px 10px 30px 0px rgba(0, 0, 0, 0.2);
-  transform: translate(156.5%, -700%);
-`;
-
-export const Signupt = styled.div`
-  z-index: 5;
+  transform: translate(274px, -360px);
+  cursor: pointer;
   color: #fff;
   text-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
   font-family: "Pretendard", sans-serif;
@@ -140,7 +163,6 @@ export const Signupt = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  transform: translate(48.6%, -1867%);
 `;
 
 export const Yes = styled.div`
@@ -151,7 +173,7 @@ export const Yes = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  transform: translate(39%, -2430%);
+  transform: translate(690px, -345px);
 `;
 
 export const Login = styled.div`
@@ -164,5 +186,6 @@ export const Login = styled.div`
   font-weight: 500;
   line-height: normal;
   text-decoration-line: underline;
-  transform: translate(47.3%, -2920%);
+  transform: translate(836px, -362px);
+  cursor: pointer;
 `;
