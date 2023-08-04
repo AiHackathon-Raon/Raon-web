@@ -5,8 +5,11 @@ import next from "../../asset/img/nextButton.svg";
 import writingImg from "../../asset/img/writingImg.svg";
 import verticalEllipsis from "../../asset/img/verticalEllipsis.svg";
 import profile1 from "../../asset/img/profile1.svg";
+import profileChange from "../../asset/img/profileChange.svg";
 
 function Profile() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
   const totalWriteAreas = 10; // 전체 WriteArea 개수
   const writeAreasPerPage = 4; // 한 페이지에 보여질 WriteArea 개수
 
@@ -46,11 +49,24 @@ function Profile() {
   return (
     <P.profileLayout>
       <P.profileContainer>
-        <P.profileImg src={profile1} />
+        <P.profileImg
+          src={profile1}
+          alt="프로필 변경"
+          onMouseOver={() => setModalOpen(true)}
+        />
+        {isModalOpen && (
+          <P.profileChangeContainer>
+            <P.profileChangeImg src={profileChange}></P.profileChangeImg>
+            <P.label onMouseOut={() => setModalOpen(false)}>
+              　
+              <P.profileChangeInput type="file" />
+            </P.label>
+          </P.profileChangeContainer>
+        )}
         <P.profileInfo>
           <P.pofileName>내이름</P.pofileName>
-          <P.schoolNameTitle>학교 이름</P.schoolNameTitle>
-          <P.schoolName>대구소프트웨어마이스터고등학교</P.schoolName>
+          <P.schoolNameTitle>학교</P.schoolNameTitle>
+          <P.schoolName>대구소프트웨어마이스터고</P.schoolName>
         </P.profileInfo>
       </P.profileContainer>
       <writingLayout>

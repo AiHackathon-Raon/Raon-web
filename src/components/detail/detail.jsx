@@ -92,7 +92,7 @@ function CommentWritingArea({ onCommentUpload }) {
   };
 
   return (
-    <>
+    <D.commentLayOut>
       <D.CommentWritingArea>
         <D.myProfile src={profile1} />
         <D.myCommentInfo>
@@ -112,7 +112,7 @@ function CommentWritingArea({ onCommentUpload }) {
           />
         </D.commentUploadButton>
       </D.CommentWritingArea>
-    </>
+    </D.commentLayOut>
   );
 }
 

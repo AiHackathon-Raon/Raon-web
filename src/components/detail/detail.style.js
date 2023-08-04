@@ -181,6 +181,10 @@ export const comment = styled.div`
 //--------------------------------------------------------
 //댓글쓰기
 
+export const commentLayOut = styled.div`
+padding-bottom:3rem;
+`
+
 //댓글쓰기영역
 export const CommentWritingArea = styled.div`
   display: flex;

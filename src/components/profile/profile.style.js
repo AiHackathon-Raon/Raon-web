@@ -19,6 +19,8 @@ export const profileContainer = styled.div`
 
 //프로필 이미지
 export const profileImg = styled.img`
+  position: relative;
+
   width: 18.15rem;
   height: 18.15rem;
 
@@ -27,34 +29,85 @@ export const profileImg = styled.img`
   margin-bottom: 6.25rem;
 
   border-radius: 30rem;
+  cursor: pointer;
+`;
+
+//프로필 변경 컨테이너
+export const profileChangeContainer = styled.div`
+  position: absolute;
+
+  margin-bottom: 19.36rem;
+`;
+
+//프로필 변경 이미지
+export const profileChangeImg = styled.img`
+  position: absolute;
+
+  width: 18.15rem;
+  height: 18.15rem;
+
+  margin-left: 14.685rem;
+  margin-bottom: 6.25rem;
+
+  cursor: pointer;
+`;
+
+//프로필 변경 파일을 감싸고 있는 라벨
+export const label = styled.label`
+  position: absolute;
+
+  width: 18.15rem;
+  height: 18.15rem;
+
+  margin-left: 14.685rem;
+
+  font-size: 250px;
+
+  cursor: pointer;
+`;
+
+//프로필 변경 파일 불러오기
+export const profileChangeInput = styled.input`
+  position: relative;
+  display: none;
 `;
 
 // 프로필 정보
 export const profileInfo = styled.div`
   display: flex;
   flex-direction: column;
+
   margin-left: 5rem;
 `;
 
 //프로필 이름
 export const pofileName = styled.div`
   margin-left: 5rem;
+  margin-bottom: 0.938rem;
+
+  font-size: 1.875rem;
 `;
 
 //학교 이름 제목
 export const schoolNameTitle = styled.div`
   margin-left: 5rem;
+  margin-bottom: 0.313rem;
+
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e3abb;
 `;
 
 //학교 이름
 export const schoolName = styled.div`
   margin-left: 5rem;
+
+  font-size: 1rem;
 `;
 
 //----------------------------------------------------------
 
-export const writingLayout = styled.div`
-`;
+export const writingLayout = styled.div``;
 
 //글 타이틀
 export const writingTitle = styled.div`
@@ -66,8 +119,8 @@ export const writingTitle = styled.div`
 
 //내 글 전체
 export const myWritingAll = styled.div`
-  width: 100%;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
 `;
@@ -81,10 +134,14 @@ export const myWritingArea = styled.div`
 `;
 
 //이전 버튼
-export const backButton = styled.img``;
+export const backButton = styled.img`
+  cursor: pointer;
+`;
 
 //다음 버튼
-export const nextButton = styled.img``;
+export const nextButton = styled.img`
+  cursor: pointer;
+`;
 
 //내 글 영역
 export const myWriting = styled.div`
@@ -98,6 +155,8 @@ export const myWriting = styled.div`
   border-radius: 0.313rem;
   background: #fff;
   box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
 `;
 
 //내 글 이미지
