@@ -212,25 +212,10 @@ export const myCommentInfo = styled.div`
   margin-left: 0.625rem;
 `;
 
-//내 이름, 인증 배지 묶기
-export const myCommentContainer = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
 //내 이름
 export const myName = styled.div`
   display: inline-block;
   font-size: 0.875rem;
-`;
-
-//인증배지
-export const myCertificationBadge = styled.img`
-  display: inline-block;
-  width: 0.75rem;
-  height: 0.75rem;
-
-  margin-left: 0.188rem;
 `;
 
 //내 댓글 내용

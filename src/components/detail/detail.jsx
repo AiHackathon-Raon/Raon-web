@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import * as D from "./detail.style";
 import HeartButton from "./HeartIcon";
 import detailBanner from "../../asset/img/detailBanner.svg";
-import certificationBadge from "../../asset/img/certificationBadge.svg";
 import profile1 from "../../asset/img/profile1.svg";
 import commentUplodad from "../../asset/img/commentUpload.svg";
 
@@ -34,7 +33,6 @@ function Detail() {
           <D.areaViewOptions>같은 학교만 보기</D.areaViewOptions>
           <D.postTitle>글 제목</D.postTitle>
           <D.postAuthor>작성자</D.postAuthor>
-          <D.certificationBadge src={certificationBadge} />
           <D.areaDividingLine />
           <D.postContent>
             글내용이다 글내용이야 대충 아무말 대잔치 어쩌고 저쩌고 저쩌고 어쩌고
@@ -70,7 +68,6 @@ function CommentSection({ author, content }) {
         <D.commentInfo>
           <D.commentAuthorContainer>
             <D.commentAuthor>{author}</D.commentAuthor>
-            <D.commentAuthorCertificationBadge src={certificationBadge} />
           </D.commentAuthorContainer>
           <D.comment>{content}</D.comment>
         </D.commentInfo>
@@ -99,10 +96,7 @@ function CommentWritingArea({ onCommentUpload }) {
       <D.CommentWritingArea>
         <D.myProfile src={profile1} />
         <D.myCommentInfo>
-          <D.myCommentContainer>
-            <D.myName>내이름</D.myName>
-            <D.myCertificationBadge src={certificationBadge} />
-          </D.myCommentContainer>
+          <D.myName>내이름</D.myName>
           <D.myComment
             type="text"
             placeholder="내용을 입력하세요."
