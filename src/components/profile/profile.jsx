@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import * as P from "./profile.style";
 import back from "../../asset/img/backButton.svg";
 import next from "../../asset/img/nextButton.svg";
@@ -9,6 +10,7 @@ import profileChange from "../../asset/img/profileChange.svg";
 
 function Profile() {
   const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null);
 
   const totalWriteAreas = 10; // 전체 WriteArea 개수
   const writeAreasPerPage = 4; // 한 페이지에 보여질 WriteArea 개수
@@ -46,11 +48,25 @@ function Profile() {
     return writeAreas;
   };
 
+  //인풋 파일 요소의 값이 변경되었을 때 호출
+  const handleFileChange = (event) => {
+    const file = event.target.files[0]; // 선택된 파일
+    if (file) {
+      // 파일이 선택됐다면
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        // 파일 읽기 완료
+        setSelectedFile(reader.result); // 읽은 파일을 selectedFile 상태에 저장
+      };
+      reader.readAsDataURL(file); // 파일을 Data URL 형태로 읽어옴
+    }
+  };
+
   return (
     <P.profileLayout>
       <P.profileContainer>
         <P.profileImg
-          src={profile1}
+          src={selectedFile ? selectedFile : profile1}
           alt="프로필 변경"
           onMouseOver={() => setModalOpen(true)}
         />
@@ -58,8 +74,7 @@ function Profile() {
           <P.profileChangeContainer>
             <P.profileChangeImg src={profileChange}></P.profileChangeImg>
             <P.label onMouseOut={() => setModalOpen(false)}>
-              　
-              <P.profileChangeInput type="file" />
+              <P.profileChangeInput type="file" onChange={handleFileChange} />
             </P.label>
           </P.profileChangeContainer>
         )}
@@ -84,10 +99,15 @@ function Profile() {
 }
 
 function WriteArea() {
+  const navigate = useNavigate();
+
   return (
     <>
       <P.myWriting>
-        <P.writingImg src={writingImg}></P.writingImg>
+        <P.writingImg
+          src={writingImg}
+          onClick={() => navigate("/detail")}
+        ></P.writingImg>
         <P.myWritingContainer>
           <P.myWritingTitle>글제목</P.myWritingTitle>
           <P.verticalEllipsis src={verticalEllipsis}></P.verticalEllipsis>

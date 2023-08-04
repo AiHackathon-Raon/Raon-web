@@ -61,7 +61,7 @@ export const label = styled.label`
 
   margin-left: 14.685rem;
 
-  font-size: 250px;
+  font-size: 50rem;
 
   cursor: pointer;
 `;
@@ -155,8 +155,6 @@ export const myWriting = styled.div`
   border-radius: 0.313rem;
   background: #fff;
   box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
-
-  cursor: pointer;
 `;
 
 //내 글 이미지
@@ -165,6 +163,8 @@ export const writingImg = styled.img`
   height: 9.375rem;
 
   border-radius: 0.313rem;
+
+  cursor: pointer;
 `;
 
 export const myWritingContainer = styled.div`
