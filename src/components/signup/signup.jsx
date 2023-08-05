@@ -23,7 +23,7 @@ function Singup() {
           type="password"
           placeholder="PW Check"
         ></S.Raund_Pw_Check>
-        <S.Signup_>회원가입</S.Signup_>
+        <S.Signup_ onClick={() => navigate("/login")}>회원가입</S.Signup_>
         <S.Yes>이미 계정이 있으신가요?</S.Yes>
         <S.Login onClick={() => navigate("/login")} alt="">
           로그인

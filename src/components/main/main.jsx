@@ -6,8 +6,15 @@ import banner from "../../asset/img/banner.svg";
 import writingImg from "../../asset/img/writingImg.svg";
 import back from "../../asset/img/backButton.svg";
 import next from "../../asset/img/nextButton.svg";
+import writingIcon from "../../asset/img/writingIcon.svg";
 
 function Main() {
+  const navigate = useNavigate();
+
+  const handleBannerClick = () => {
+    window.open("http://dgswhs.kr/");
+  };
+
   const totalWriteAreas = 17; // 전체 WriteArea 개수
   const writeAreasPerPage = 4; // 한 페이지에 보여질 WriteArea 개수
 
@@ -48,9 +55,13 @@ function Main() {
     <>
       <M.mainLayout>
         <Header></Header>
-        <M.banner src={banner}></M.banner>
+        <M.banner src={banner} onClick={handleBannerClick}></M.banner>
         <writingLayout>
           <M.writingTitle>최신순</M.writingTitle>
+          <M.writingIcon
+            src={writingIcon}
+            onClick={() => navigate("/writing")}
+          ></M.writingIcon>
           <M.myWritingAll>
             <M.myWritingArea>
               <M.backButton src={back} onClick={goToPrevPage}></M.backButton>

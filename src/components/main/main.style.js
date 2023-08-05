@@ -11,6 +11,7 @@ export const mainLayout = styled.div`
 
 export const banner = styled.img`
   width: 100%;
+  cursor: pointer;
 `;
 
 //--------------------------------------------------
@@ -19,11 +20,22 @@ export const writingLayout = styled.div``;
 
 //글 타이틀
 export const writingTitle = styled.div`
+  display: inline-block;
+
   margin-left: 15rem;
   margin-top: 2rem;
   margin-bottom: 1.875rem;
 
   font-size: 1.5rem;
+`;
+
+//글 쓰기 아이콘
+export const writingIcon = styled.img`
+  display: inline-block;
+
+  margin-left: 0.313rem;
+
+  cursor: pointer;
 `;
 
 //내 글 전체
