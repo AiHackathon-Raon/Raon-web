@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const All = styled.div`
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 `;
 
 export const Img = styled.img`
@@ -29,6 +29,7 @@ export const Logo = styled.img`
   z-index: 2;
   transform: translate(740px, -470px);
 `;
+
 export const Id = styled.div`
   z-index: 3;
   color: #1e3abb;
