@@ -11,7 +11,8 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<MainPage />}></Route>
+        <Route exact path="/main" element={<MainPage />}></Route>
+        <Route exact path="/" element={<LoginPage />}></Route>
         <Route exact path="/login" element={<LoginPage />}></Route>
         <Route exact path="/signup" element={<SignUpPage />}></Route>
         <Route exact path="/Writing" element={<WritingPage />}></Route>

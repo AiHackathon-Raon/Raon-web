@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import * as D from "./detail.style";
+import Header from "../header/header";
 import HeartButton from "./HeartIcon";
 import detailBanner from "../../asset/img/detailBanner.svg";
 import profile1 from "../../asset/img/profile1.svg";
@@ -28,6 +29,7 @@ function Detail() {
   return (
     <>
       <D.detailLayout>
+        <Header></Header>
         <D.detailPhotoBox src={detailBanner} />
         <D.postingArea>
           <D.areaViewOptions>같은 학교만 보기</D.areaViewOptions>
