@@ -14,7 +14,7 @@ export const profileLayout = styled.div`
 export const profileContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
 `;
 
 //프로필 이미지

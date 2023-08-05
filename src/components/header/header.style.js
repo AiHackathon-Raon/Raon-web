@@ -13,6 +13,7 @@ export const logo = styled.img`
     margin-left: 2vw;
     width: 6vw;
     height: 4vw;
+    cursor: pointer;
 `
 
 export const searchfiled = styled.div`
@@ -28,6 +29,7 @@ export const search = styled.input`
   padding-left: 1vw; 
   border-radius: 100px;
   box-shadow: 10px 10px 10px #00000025;
+  padding-inline-start: 30px;
   &::-webkit-search-cancel-button {
     display: none;
   }
@@ -58,4 +60,5 @@ export const profileImg = styled.img`
   height: 3vw; 
   border-radius: 70%;
   object-fit: cover;
+  cursor: pointer;
 `

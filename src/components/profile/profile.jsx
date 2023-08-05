@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../header/header";
 import * as P from "./profile.style";
 import back from "../../asset/img/backButton.svg";
 import next from "../../asset/img/nextButton.svg";
@@ -64,6 +65,7 @@ function Profile() {
 
   return (
     <P.profileLayout>
+      <Header></Header>
       <P.profileContainer>
         <P.profileImg
           src={selectedFile ? selectedFile : profile1}
